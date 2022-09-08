@@ -1,0 +1,15 @@
+﻿<Window x:Class="Caro_Chess.FileName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Caro_Chess"
+        mc:Ignorable="d"
+        Title="FileName" Height="182" Width="303.5">
+    <Canvas>
+        <Label Canvas.Left="55" Canvas.Top="43">File Name:</Label>
+        <TextBox x:Name="textBox" Width="120" FontSize="20" Height="25" Canvas.Left="130" Canvas.Top="44" VerticalAlignment="Center" Background="Red" Foreground="White"></TextBox>
+        <Button Content="OK" Click="OK_Click" Height="20" Width="80" Canvas.Left="58" Canvas.Top="87" IsDefault="True"></Button>
+        <Button Content="Cancel" Click="Cancel_Click" Height="20" Width="80" Canvas.Left="170" Canvas.Top="87" IsCancel="True"></Button>
+    </Canvas>
+</Window>

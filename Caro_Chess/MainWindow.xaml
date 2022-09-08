@@ -1,0 +1,23 @@
+﻿<Window x:Class="Caro_Chess.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Caro_Chess"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="540.789" Width="800" Loaded="Window_Loaded">
+    <Canvas x:Name="Canvas">
+        <!--Tên trò chơi-->
+        <Label Content="Cờ ca rô" HorizontalContentAlignment="Center" FontSize="50" Foreground="BurlyWood" Margin="300 0"></Label>
+        <!--Bộ đếm giờ-->
+        <TextBlock x:Name="time" Height="83" Width="80" Canvas.Left="551" Canvas.Top="147" FontSize="60" Foreground="Blue" ></TextBlock>
+        <Label Content="Time Out" FontSize="30" Canvas.Left="528" Canvas.Top="90"></Label>
+        <Button x:Name="StartTimeOut" Content="Start With Time Out" FontSize="20" Canvas.Left="507" Canvas.Top="250" Height="30" Width="180" Click="TimeOut_Click"></Button>
+        <Label Content="Turn: " FontSize="30" Canvas.Left="528" Canvas.Top="290"></Label>
+        <Label Name="turn" Content="X" FontSize="30" Foreground="Red" Canvas.Left="620" Canvas.Top="290"></Label>
+        <Button Content="Save" FontSize="20" Width="100" Canvas.Left="550" Canvas.Top="350" Click="Save_Click"></Button>
+        <Button Content="Load" FontSize="20" Width="100" Canvas.Left="550" Canvas.Top="390" Click="Load_Click"></Button>
+        <Button Content="Reset" FontSize="20" Width="100" Canvas.Left="550" Canvas.Top="430" Click="Reset_Click"></Button>
+        <Button Content="Computer" FontSize="20" Width="100" Canvas.Left="550" Canvas.Top="470" Click="Computer_Click"></Button>
+    </Canvas>
+</Window>
